@@ -9,6 +9,8 @@ TagManager:
   - floor
   - environment
   - checkPoint
+  - key
+  - door
   layers:
   - Default
   - TransparentFX
