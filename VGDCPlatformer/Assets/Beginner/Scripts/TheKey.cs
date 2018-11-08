@@ -10,7 +10,12 @@ public class TheKey : MonoBehaviour {
         //gameObject will be destroyed
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject); // Destroys Key to simulate picking up
+            PlayerState script = collision.gameObject.GetComponent<PlayerState>(); //checks player script
+            if (script.key_found == false) //checks to see if key has been found
+            {
+                script.key_found = true;
+            }
+            Destroy(gameObject); // destroys Key to simulate picking up
         }
     }
 }
