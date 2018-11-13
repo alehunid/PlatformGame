@@ -26,7 +26,8 @@ public class Platform : MonoBehaviour {
 
             collision.collider.transform.SetParent(transform);
         }
-        
+        //checks how the platform should break and makes sure it isn't activated multiple times
+        //delete is to have the time completely remove the platform and transparent makes the platform opaque then come back after a time
         if ((stateplatform == "delete" || stateplatform == "transparent") && !IsInvoking("disappearing"))
         {
             InvokeRepeating("disappearing", 1, 1);
@@ -103,6 +104,3 @@ public class Platform : MonoBehaviour {
         }
     }
 }
-//animate platform
-
-//moving platform triggered from anywhere
