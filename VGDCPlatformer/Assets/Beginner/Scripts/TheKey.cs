@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class TheKey : MonoBehaviour {
 
+    /* Direction:
+     * Attach collider to key object
+     * Turn on isTrigger on key object
+     * Attach this script to key object
+     * Attach PlayerState to player object
+     * Changes key_found in PlayerState script to true after collision with key object
+    */
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //if this gameObject detects the player 

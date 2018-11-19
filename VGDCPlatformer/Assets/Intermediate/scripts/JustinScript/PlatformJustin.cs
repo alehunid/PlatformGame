@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Platform : MonoBehaviour {
+public class PlatformJustin : MonoBehaviour {
 
+    //needed to see which platform type it is
     public string stateplatform;
+    //timer for how long platform takes to go away or come back
     public float disappeartime;
     int count = 0;
+    //needed to make platform transparent
     SpriteRenderer platformspriterenderer;
+    //needed to make platform none collidable
     BoxCollider2D platformcollider;
 
     void Start()
@@ -26,7 +30,9 @@ public class Platform : MonoBehaviour {
 
             collision.collider.transform.SetParent(transform);
         }
-        
+        //delete is for platforms that don't come back
+        //transparent is for ones that do
+        //IsInvoking checks that the disappearing method is not being invoked, making sure the platform state doesn't keep changing
         if ((stateplatform == "delete" || stateplatform == "transparent") && !IsInvoking("disappearing"))
         {
             InvokeRepeating("disappearing", 1, 1);
@@ -103,6 +109,3 @@ public class Platform : MonoBehaviour {
         }
     }
 }
-//animate platform
-
-//moving platform triggered from anywhere

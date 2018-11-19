@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour {
+public class MovingPlatformJustin : MonoBehaviour {
 
     //manages platform movement at different points
     [Header("Platform Positions")]
