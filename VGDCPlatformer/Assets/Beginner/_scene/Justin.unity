@@ -122,7 +122,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 151522117}
-  - component: {fileID: 151522116}
   m_Layer: 8
   m_Name: MovingPlatform
   m_TagString: Untagged
@@ -130,25 +129,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &151522116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 151522115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b785a6a3b8f948549ac568c944e615e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movingPlatform: {fileID: 401846232}
-  position1: {fileID: 1117099113}
-  position2: {fileID: 1384921554}
-  position3: {fileID: 220606106}
-  newPosition: {x: 0, y: 0, z: 0}
-  state: stop
-  platformVelocity: 2
-  movementTime: 3
 --- !u!4 &151522117
 Transform:
   m_ObjectHideFlags: 0
@@ -621,11 +601,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1318383324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7048c7d1ce49b41ac6cbb867e72053, type: 3}
+  m_Script: {fileID: 11500000, guid: f1e9e9db323503742b908c276a516f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateplatform: transparent
-  disappeartime: 5
 --- !u!1 &1384921553
 GameObject:
   m_ObjectHideFlags: 0
